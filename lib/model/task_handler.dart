@@ -61,6 +61,7 @@ class TaskHandler extends ChangeNotifier {
   List<Task> testTasks() {
     if (_tasks.length <= 6) {
       for (int i = 0; i < 3; i++) {
+        // bool isCompleted = i % 2 == 0;
         _tasks.add(Task.fromTitle('Task $_taskNbr'));
         _taskNbr++;
       }
